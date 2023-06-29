@@ -1,0 +1,89 @@
+.navbar {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    /* Adjust this value as needed */
+}
+
+.navbar a:hover {
+    color: var(--color-text);
+    background-color: var(--color-cta);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.navbar a.active {
+    border-bottom: 2px solid var(--color-cta);
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.left-col,
+.right-col {
+    width: 50%;
+}
+
+.left-col {
+    text-align: center;
+}
+
+.left-col .cta {
+    display: center;
+    margin: 20px auto;
+    padding: 10px 20px;
+    border-radius: 50px;
+    background-color: var(--color-cta);
+    color: var(--color-text);
+    text-decoration: none;
+}
+
+.left-col .cta:hover {
+    background-color: white;
+    color: black;
+}
+
+.right-col img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.features {
+    text-align: center;
+}
+
+.features ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.features ul li::before {
+    content: "\2605";
+    /* Unicode character for star */
+    display: inline-block;
+    width: 1em;
+    margin-right: 10px;
+}
+
+.feature-col ul {
+    text-align: center;
+    padding-left: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 6px;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Life Buddy</title>
+    <link rel="icon" href="../Images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../CSS-Files/main.css">
+    <link rel="stylesheet" type="text/css" href="../CSS-Files/login.css">
+</head>
+
+<body>
+    <header>
+        <!-- Navigation bar -->
+        <nav class="navbar">
+            <!-- Logo -->
+            <div class="navbar-logo">
+                <a href="../index.html"><strong>LIFE BUDDY</strong></a>
+            </div>
+        </nav>
+    </header>
+    <form class="form" autocomplete="off">
+        <div class="control">
+            <h1>Sign In</h1>
+        </div>
+        <div class="control block-cube block-input">
+            <input name="username" type="text" placeholder="Username" />
+            <div class="bg-top">
+                <div class="bg-inner"></div>
+            </div>
+            <div class="bg-right">
+                <div class="bg-inner"></div>
+            </div>
+            <div class="bg">
+                <div class="bg-inner"></div>
+            </div>
+        </div>
+        <div class="control block-cube block-input">
+            <input name="password" type="password" placeholder="Password" />
+            <div class="bg-top">
+                <div class="bg-inner"></div>
+            </div>
+            <div class="bg-right">
+                <div class="bg-inner"></div>
+            </div>
+            <div class="bg">
+                <div class="bg-inner"></div>
+            </div>
+        </div>
+        <button class="btn block-cube block-cube-hover" type="button">
+            <div class="bg-top">
+                <div class="bg-inner"></div>
+            </div>
+            <div class="bg-right">
+                <div class="bg-inner"></div>
+            </div>
+            <div class="bg">
+                <div class="bg-inner"></div>
+            </div>
+            <div class="text">
+                Log In
+            </div>
+        </button>
+    </form>
+    <footer class="mt-auto">
+        <!-- Footer Content -->
+        <p>&copy; 2023 Life Buddy. All rights reserved by ST10152776</p>
+    </footer>
+    <script>
+        document.querySelector(".btn").addEventListener("click", function () {
+            window.location.href = "dashboard.html";
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LIFE BUDDY | Study Groups</title>
+  <link rel="icon" href="../Images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../CSS-Files/main.css">
+  <link rel="stylesheet" type="text/css" href="../CSS-Files/study-groups.css">
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+  <header>
+    <!-- Navigation bar -->
+    <nav class="navbar">
+      <!-- Logo -->
+      <div class="navbar-logo">
+        <a href="dashboard.html"><strong>LIFE BUDDY</strong></a>
+      </div>
+
+      <!-- Navigation links -->
+      <div class="navbar-links">
+        <a href="dashboard.html">Dashboard</a>
+        <a href="study-materials.html">Study Materials</a>
+        <a href="classrooms.html">Classrooms</a>
+        <a href="study-groups.html" class="active">Study Groups</a>
+        <a href="final-poe.html">Final POE</a>
+        <a href="references.html">References</a>
+        <div class="dropdown">
+          <a href="#">Account</a>
+          <div class="dropdown-content">
+            <a href="#">My Account</a>
+            <a href="#" id="dark-mode-switch">Dark Mode</a>
+            <a href="#" id="logout">Logout</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="flex-grow-1">
+    <div class="title-section">
+      <h1>Study Groups</h1>
+    </div>
+    <!-- Study Group Blocks -->
+    <section id="study-group-blocks"></section>
+
+    <!-- Create Group Button -->
+    <div class="create-group-button">
+      <button id="show-create-form-button">Create Group</button>
+    </div>
+
+    <!-- Create Group Form -->
+    <div class="create-group-form">
+      <h2>Create Study Group</h2>
+      <form id="study-group-form" onsubmit="createStudyGroup(); return false;">
+        <div class="form-group">
+          <label for="group-name-input">Group Name</label>
+          <input type="text" id="group-name-input" required>
+        </div>
+        <div class="form-group">
+          <label for="description-input">Description</label>
+          <textarea id="description-input" required></textarea>
+        </div>
+        <div class="form-group">
+          <label for="start-date-input">Start Date</label>
+          <input type="date" id="start-date-input" required>
+        </div>
+        <div class="form-group">
+          <label for="end-date-input">End Date</label>
+          <input type="date" id="end-date-input" required>
+        </div>
+        <button type="submit" id="create-group-button">Create Group</button>
+      </form>
+    </div>
+  </main>
+
+  <footer class="mt-auto">
+    <!-- Footer Content -->
+    <p>&copy; 2023 Life Buddy. All rights reserved by ST10152776</p>
+  </footer>
+
+  <script src="../JavaScript-Files/main.js"></script>
+  <script src="../JavaScript-Files/study-groups.js"></script>
+</body>
+
+</html>

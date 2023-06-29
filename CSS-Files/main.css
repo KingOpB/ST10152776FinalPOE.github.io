@@ -1,0 +1,24 @@
+:root {
+    --color-background: #000000;
+    /* 60% */
+    --color-text: #ffffff;
+    /* 30% */
+    --color-cta: #f55111;
+    /* 10% */
+}
+
+body {
+    background-color: var(--color-background);
+    color: var(--color-text);
+}
+
+.cta {
+    color: var(--color-cta);
+}
+
+body.light-mode {
+    --color-background: #ffffff;
+    /* 30% */
+    --color-text: #000000;
+    /* 60% */
+}

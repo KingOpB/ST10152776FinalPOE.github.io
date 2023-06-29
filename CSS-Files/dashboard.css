@@ -1,0 +1,225 @@
+/* Navbar */
+.navbar {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  position: relative;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.navbar a:hover {
+  color: var(--color-text);
+  background-color: var(--color-cta);
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.navbar a.active {
+  border-bottom: 2px solid var(--color-cta);
+}
+
+.navbar .dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+.navbar .dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.navbar .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Dark Mode Switch */
+.dark-mode-switch {
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  background-color: var(--color-bg);
+  border-radius: 10px;
+  position: relative;
+  cursor: pointer;
+}
+
+.dark-mode-switch::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  background-color: var(--color-text);
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.dark-mode-switch.dark-mode::before {
+  transform: translateX(20px);
+}
+
+/* Overlay */
+.overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.countdown {
+  font-size: 24px;
+  color: var(--color-text);
+}
+
+/* Logout Button */
+.logout-button {
+  padding: 10px;
+  background-color: var(--color-cta);
+  color: var(--color-text);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+  background-color: #c60000;
+}
+
+/* Calendar */
+.calendar {
+  max-width: 600px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+.calendar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.calendar-body {
+  margin-top: 10px;
+}
+
+.calendar-days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  text-align: center;
+}
+
+.day {
+  padding: 5px;
+}
+
+.calendar-dates {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+  text-align: center;
+}
+
+.calendar-dates .date {
+  padding: 5px;
+  cursor: pointer;
+}
+
+.calendar-dates .date:hover {
+  background-color: var(--color-cta);
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: lightslategrey;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  max-width: 400px;
+  color: #000;
+}
+
+.close {
+  color: red;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Container */
+.container {
+  background-color: var(--color-cta);
+  display: flex;
+  justify-content: center;
+  color: #000;
+}
+
+.columns {
+  display: inline-flex;
+  gap: 100px;
+}
+
+.column {
+  flex: 5;
+}
+
+/* Personal Tag */
+.personal-tag {
+  color: lightblue;
+}
+
+footer {
+  text-align: center;
+  padding: 6px;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+ul li::before {
+  content: "★";
+  margin-right: 5px;
+}

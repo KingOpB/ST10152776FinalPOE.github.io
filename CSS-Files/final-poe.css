@@ -1,0 +1,154 @@
+/* Navbar */
+.navbar {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    position: relative;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.navbar a:hover {
+    color: var(--color-text);
+    background-color: var(--color-cta);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.navbar a.active {
+    border-bottom: 2px solid var(--color-cta);
+}
+
+.navbar .dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+.navbar .dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.navbar .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Dark Mode Switch */
+.dark-mode-switch {
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    background-color: var(--color-bg);
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+.dark-mode-switch::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 16px;
+    height: 16px;
+    background-color: var(--color-text);
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.dark-mode-switch.dark-mode::before {
+    transform: translateX(20px);
+}
+
+/* Overlay */
+.overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.countdown {
+    font-size: 24px;
+    color: var(--color-text);
+}
+
+/* Logout Button */
+.logout-button {
+    padding: 10px;
+    background-color: var(--color-cta);
+    color: var(--color-text);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+    background-color: #c60000;
+}
+
+footer {
+    text-align: center;
+    padding: 6px;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+}
+
+.faq-section {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.faq-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.faq {
+    border: 2px solid var(--color-cta);
+    padding: 10px;
+}
+
+.faq h3.question {
+    cursor: pointer;
+}
+
+.faq .answer {
+    display: none;
+}
+
+.faq.open .answer {
+    display: block;
+}
+
+.faq .answer {
+    display: none;
+}
+
+.faq:hover .answer {
+    display: block;
+}
+
+.answer {
+    color: var(--color-cta)
+}
